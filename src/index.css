@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #1b365d;
+  --color-brand-green-hover: #122543;
+  --color-brand-orange: #d97757;
+  --color-brand-orange-hover: #c46647;
+  --color-brand-bg: #f8fafc;
+  --font-serif: "Georgia", Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-bg);
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(120px) scale(0.4);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sunShine {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.7), 0 0 40px rgba(245, 158, 11, 0.5), 0 0 60px rgba(245, 158, 11, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(251, 191, 36, 0.9), 0 0 70px rgba(245, 158, 11, 0.7), 0 0 100px rgba(234, 88, 12, 0.5);
+    transform: scale(1.06);
+  }
+}
+
+@keyframes moonShine {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(226, 232, 240, 0.6), 0 0 30px rgba(203, 213, 225, 0.4), 0 0 45px rgba(148, 163, 184, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(248, 250, 252, 0.8), 0 0 55px rgba(226, 232, 240, 0.6), 0 0 80px rgba(203, 213, 225, 0.4);
+    transform: scale(1.06);
+  }
+}
+
+.animate-sun-shine {
+  animation: sunShine 3s ease-in-out infinite alternate;
+}
+
+.animate-moon-shine {
+  animation: moonShine 3.5s ease-in-out infinite alternate;
+}
+
+

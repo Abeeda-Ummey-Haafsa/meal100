@@ -1,0 +1,2178 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "phone": "01711111111",
+      "name": "Meal100 Admin",
+      "officeLink": "https://meal100.com",
+      "officeMapLink": "https://maps.google.com",
+      "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=60",
+      "walletBalance": 50000,
+      "profileComplete": true,
+      "freeMealClaimed": true,
+      "role": "admin",
+      "createdAt": "2026-07-19T17:58:03.952Z"
+    },
+    {
+      "id": "u2",
+      "phone": "01722222222",
+      "name": "Sanjidul Islam",
+      "officeLink": "https://creative-hq.com",
+      "officeMapLink": "https://maps.google.com/?q=Dhanmondi,Dhaka",
+      "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=60",
+      "walletBalance": 20000,
+      "profileComplete": true,
+      "freeMealClaimed": true,
+      "role": "user",
+      "createdAt": "2026-07-19T17:58:03.954Z"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "v1",
+      "name": "Sultan's Dine",
+      "logoUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=120&auto=format&fit=crop&q=60",
+      "tagline": "Dhaka's Legendary Kacchi Biryani & Borhani",
+      "isFeatured": true,
+      "rating": 4.9
+    },
+    {
+      "id": "v2",
+      "name": "Kacchi Bhai",
+      "logoUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=120&auto=format&fit=crop&q=60",
+      "tagline": "Basmati Kacchi with Mustard Oil & Real Spices",
+      "isFeatured": true,
+      "rating": 4.8
+    },
+    {
+      "id": "v3",
+      "name": "Green Kitchen",
+      "logoUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=120&auto=format&fit=crop&q=60",
+      "tagline": "Healthy, Diet-Friendly Balanced Corporate Meals",
+      "isFeatured": true,
+      "rating": 4.7
+    },
+    {
+      "id": "v4",
+      "name": "Dhaka Catering",
+      "logoUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=120&auto=format&fit=crop&q=60",
+      "tagline": "Authentic Home-style Polao, Curries & Lentils",
+      "isFeatured": false,
+      "rating": 4.6
+    },
+    {
+      "id": "v5",
+      "name": "Tehari Ghar",
+      "logoUrl": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=120&auto=format&fit=crop&q=60",
+      "tagline": "Spicy Beef Tehari made with original Mustard Oil",
+      "isFeatured": false,
+      "rating": 4.5
+    }
+  ],
+  "menuPackages": [
+    {
+      "id": "p-v1-monday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-monday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-monday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-monday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-monday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-monday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-tuesday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-tuesday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-tuesday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-tuesday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-tuesday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-tuesday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-wednesday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-wednesday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-wednesday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-wednesday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-wednesday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-wednesday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-thursday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-thursday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-thursday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-thursday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-thursday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-thursday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-friday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-friday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-friday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-friday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-friday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-friday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-saturday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-saturday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-saturday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-saturday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-saturday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-saturday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-sunday-lunch-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-sunday-lunch-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-sunday-lunch-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v1-sunday-dinner-a",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v1-sunday-dinner-b",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v1-sunday-dinner-c",
+      "vendorId": "v1",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-monday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-monday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-monday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-monday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-monday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-monday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-tuesday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-tuesday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-tuesday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-tuesday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-tuesday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-tuesday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-wednesday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-wednesday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-wednesday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-wednesday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-wednesday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-wednesday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-thursday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-thursday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-thursday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-thursday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-thursday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-thursday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-friday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-friday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-friday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-friday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-friday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-friday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-saturday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-saturday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-saturday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-saturday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-saturday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-saturday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-sunday-lunch-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-sunday-lunch-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-sunday-lunch-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v2-sunday-dinner-a",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Special Basmati Kacchi, Shami Kabab, Jall Borhani, Chutney",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v2-sunday-dinner-b",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v2-sunday-dinner-c",
+      "vendorId": "v2",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-monday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-monday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-monday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-monday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-monday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-monday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-tuesday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-tuesday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-tuesday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-tuesday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-tuesday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-tuesday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-wednesday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-wednesday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-wednesday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-wednesday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-wednesday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-wednesday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-thursday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-thursday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-thursday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-thursday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-thursday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-thursday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-friday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-friday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-friday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-friday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-friday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-friday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-saturday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-saturday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-saturday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-saturday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-saturday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-saturday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-sunday-lunch-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-sunday-lunch-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-sunday-lunch-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v3-sunday-dinner-a",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v3-sunday-dinner-b",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v3-sunday-dinner-c",
+      "vendorId": "v3",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-monday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-monday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-monday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-monday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-monday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-monday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-tuesday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-tuesday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-tuesday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-tuesday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-tuesday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-tuesday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-wednesday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-wednesday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-wednesday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-wednesday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-wednesday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-wednesday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-thursday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-thursday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-thursday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-thursday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-thursday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-thursday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-friday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-friday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-friday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-friday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-friday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-friday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-saturday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-saturday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-saturday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-saturday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-saturday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-saturday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-sunday-lunch-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-sunday-lunch-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-sunday-lunch-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v4-sunday-dinner-a",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v4-sunday-dinner-b",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Basmati Rice, Beef Bhuna, Egg Curry, Potato Bhorti, Dal",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v4-sunday-dinner-c",
+      "vendorId": "v4",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-monday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-monday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-monday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-monday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-monday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-monday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Monday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-tuesday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-tuesday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-tuesday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-tuesday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-tuesday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-tuesday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Tuesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-wednesday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-wednesday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-wednesday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-wednesday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-wednesday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-wednesday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Wednesday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-thursday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-thursday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-thursday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-thursday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-thursday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-thursday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Thursday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-friday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-friday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-friday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-friday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-friday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-friday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Friday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-saturday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-saturday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-saturday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-saturday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-saturday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-saturday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Saturday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-sunday-lunch-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Classic Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-sunday-lunch-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Delight Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-sunday-lunch-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "lunch",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    },
+    {
+      "id": "p-v5-sunday-dinner-a",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Premium Box A",
+      "items": "Chinigura Rice, Roast Chicken, Mixed Veggies, Thick Lentils",
+      "price": 240,
+      "discountPrice": 199
+    },
+    {
+      "id": "p-v5-sunday-dinner-b",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Royal Box B",
+      "items": "Mustard Oil Beef Tehari, Egg Curry, Cucumber Salad, Soft Drink",
+      "price": 280,
+      "discountPrice": 239
+    },
+    {
+      "id": "p-v5-sunday-dinner-c",
+      "vendorId": "v5",
+      "dayOfWeek": "Sunday",
+      "mealType": "dinner",
+      "packageName": "Healthy Fitness Box C",
+      "items": "Brown Rice, Grilled Chicken Breast, Sauteed Vegetables, Egg White",
+      "price": 220,
+      "discountPrice": 180
+    }
+  ],
+  "orders": [],
+  "transactions": [],
+  "reviews": [],
+  "withdrawals": []
+}

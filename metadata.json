@@ -1,0 +1,6 @@
+{
+  "name": "Meal100",
+  "description": "Office Lunch & Dinner Ordering Platform with integrated wallet system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
