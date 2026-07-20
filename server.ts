@@ -34,15 +34,15 @@ import {
 const PORT = 3000;
 
 // Connect BEFORE starting Express
-await connectDB();
+
 
 const app = express();
 
 
-// app.use(async (req, res, next) => {
-//   await connectDB();
-//   next();
-// });
+app.use(async (req, res, next) => {
+  await connectDB();
+  next();
+});
 
 
 app.use(express.json());
