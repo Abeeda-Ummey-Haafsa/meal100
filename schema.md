@@ -6,6 +6,7 @@ dotenv.config();
 
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { connectDB } from "./src/db/connect";
 import { defaultUsers, defaultVendors, defaultPackages } from './src/seedData';
@@ -16,10 +17,10 @@ import {
   MenuPackage,
   Order,
   Transaction,
+  
   Review,
   Withdrawal,
 } from "./src/types";
-
 import {
   UserModel,
   VendorModel,
@@ -31,19 +32,14 @@ import {
   OtpModel
 } from "./src/db/models";
 
-const PORT = 3000;
 
-// Connect BEFORE starting Express
-await connectDB();
 
 const app = express();
-
-
-// app.use(async (req, res, next) => {
-//   await connectDB();
-//   next();
-// });
-
+app.use(async (req, res, next) => {
+  await connectDB();
+  next();
+});
+const PORT = 3000;
 
 app.use(express.json());
 
@@ -79,8 +75,7 @@ app.post('/api/auth/send-otp', async (req, res) => {
 
     // Also pre-fill/return OTP in response so client can easily debug/log in without console checks
     res.json({ message: 'OTP sent successfully (mocked)', debugOTP: otp });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -122,8 +117,7 @@ app.post('/api/auth/verify-otp', async (req, res) => {
     }
 
     res.json({ token: user.id, user });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -136,8 +130,7 @@ app.get('/api/me', async (req, res) => {
       return res.status(401).json({ error: 'Unauthorized session' });
     }
     res.json(user);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -200,8 +193,7 @@ app.put('/api/me', async (req, res) => {
 
     await dbUser.save();
     res.json(dbUser);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -234,8 +226,7 @@ app.get('/api/menu-packages', async (req, res) => {
 
     const pkgs = await MenuPackageModel.find(query).lean();
     res.json(pkgs);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -284,8 +275,7 @@ app.get('/api/orders', async (req, res) => {
     detailedOrders.sort((a: Order, b: Order) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     res.json(detailedOrders);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -365,6 +355,7 @@ app.post('/api/orders', async (req, res) => {
         memo: `Ordered ${quantity}x ${pkg.packageName}`
       };
 
+      dbUser.walletBalance = dbUser.walletBalance;
       await dbUser.save({ session });
       await OrderModel.create([order], { session });
       await TransactionModel.create([txn], { session });
@@ -372,16 +363,13 @@ app.post('/api/orders', async (req, res) => {
       await session.commitTransaction();
 
       res.json({ success: true, order, resultingBalance: dbUser.walletBalance });
-    } catch (err) {
-      if (session.inTransaction()) {
-        await session.abortTransaction();
-      }
-      throw err;
+    } catch {
+      await session.abortTransaction();
+      throw new Error('transaction failed');
     } finally {
       session.endSession();
     }
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -457,16 +445,13 @@ app.post('/api/orders/:id/status', async (req, res) => {
       await order.save({ session });
       await session.commitTransaction();
       res.json({ success: true, order });
-    } catch (err) {
-      if (session.inTransaction()) {
-        await session.abortTransaction();
-      }
-      throw err;
+    } catch {
+      await session.abortTransaction();
+      throw new Error('transaction failed');
     } finally {
       session.endSession();
     }
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -519,16 +504,13 @@ app.post('/api/deposit', async (req, res) => {
       await session.commitTransaction();
 
       res.json({ success: true, resultingBalance: dbUser.walletBalance, transaction: txn });
-    } catch (err) {
-      if (session.inTransaction()) {
-        await session.abortTransaction();
-      }
-      throw err;
+    } catch {
+      await session.abortTransaction();
+      throw new Error('transaction failed');
     } finally {
       session.endSession();
     }
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -561,8 +543,7 @@ app.get('/api/transactions', async (req, res) => {
     detailedTxns.sort((a: Transaction, b: Transaction) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     res.json(detailedTxns);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -578,8 +559,7 @@ app.get('/api/admin/users', async (req, res) => {
     }
     const users = await UserModel.find().lean();
     res.json(users);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -623,8 +603,7 @@ app.post('/api/admin/vendors', async (req, res) => {
 
     const vendors = await VendorModel.find().lean();
     res.json({ success: true, vendors });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -644,8 +623,7 @@ app.delete('/api/admin/vendors/:id', async (req, res) => {
     await MenuPackageModel.deleteMany({ vendorId: id });
 
     res.json({ success: true });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -693,27 +671,24 @@ app.post('/api/admin/menu-packages', async (req, res) => {
 
     const packages = await MenuPackageModel.find().lean();
     res.json({ success: true, packages });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
 // DELETE Menu Package (Admin only)
 app.delete('/api/admin/menu-packages/:id', async (req, res) => {
-  try {
-    const user = await getAuthenticatedUser(req);
-    if (!user || user.role !== 'admin') {
-      return res.status(403).json({ error: 'Admin role required' });
-    }
-
-    const { id } = req.params;
-    await MenuPackageModel.deleteOne({ id });
-    res.json({ success: true });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
-    res.status(500).json({ error: 'Internal server error' });
+  const user = await getAuthenticatedUser(req);
+  if (!user || user.role !== 'admin') {
+    return res.status(403).json({ error: 'Admin role required' });
   }
+
+  const { id } = req.params;
+  const db = getDb();
+
+  db.menuPackages = db.menuPackages.filter((p: MenuPackage) => p.id !== id);
+  saveDb(db);
+  res.json({ success: true });
 });
 
 // MANUAL ADJUST BALANCE WITH AUDIT LOG (Admin only)
@@ -757,8 +732,7 @@ app.post('/api/admin/adjust-balance', async (req, res) => {
     await TransactionModel.create(txn);
 
     res.json({ success: true, targetUser: dbUser });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -778,8 +752,7 @@ app.get('/api/reviews', async (req, res) => {
     reviews.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     res.json(reviews);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -837,8 +810,7 @@ app.post('/api/reviews', async (req, res) => {
     await ReviewModel.create(newReview);
 
     res.json({ success: true, review: newReview });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -868,8 +840,7 @@ app.get('/api/admin/reviews', async (req, res) => {
     detailedReviews.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     res.json(detailedReviews);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -892,8 +863,7 @@ app.post('/api/admin/reviews/:id/toggle-hide', async (req, res) => {
     await review.save();
 
     res.json({ success: true, review });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -914,8 +884,7 @@ app.delete('/api/admin/reviews/:id', async (req, res) => {
     }
 
     res.json({ success: true });
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -951,8 +920,7 @@ app.get('/api/withdrawals', async (req, res) => {
     detailedWithdrawals.sort((a: Withdrawal, b: Withdrawal) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     res.json(detailedWithdrawals);
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -1025,16 +993,13 @@ app.post('/api/withdrawals', async (req, res) => {
       await session.commitTransaction();
 
       res.json({ success: true, user: dbUser, withdrawal: newWithdrawal, transaction: txn });
-    } catch (err) {
-      if (session.inTransaction()) {
-        await session.abortTransaction();
-      }
-      throw err;
+    } catch {
+      await session.abortTransaction();
+      throw new Error('transaction failed');
     } finally {
       session.endSession();
     }
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -1113,16 +1078,13 @@ app.post('/api/admin/withdrawals/:id/status', async (req, res) => {
       await withdrawal.save({ session });
       await session.commitTransaction();
       res.json({ success: true, withdrawal });
-    } catch (err) {
-      if (session.inTransaction()) {
-        await session.abortTransaction();
-      }
-      throw err;
+    } catch {
+      await session.abortTransaction();
+      throw new Error('transaction failed');
     } finally {
       session.endSession();
     }
-  } catch (err) {
-    console.error(`Error in ${req.method} ${req.path}:`, err);
+  } catch {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
