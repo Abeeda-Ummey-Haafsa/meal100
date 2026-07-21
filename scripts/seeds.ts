@@ -8,19 +8,19 @@ dns.setServers([
 import dotenv from "dotenv";
 dotenv.config();
 
-import { connectDB } from "../src/db/connect";
+import { connectDB } from "../src/db/connect.js";
 
 import {
     UserModel,
     VendorModel,
     MenuPackageModel
-} from "../src/db/models";
+} from "../src/db/models.js";
 
 import {
     defaultUsers,
     defaultVendors,
     defaultPackages
-} from "../src/seedData";
+} from "../src/seedData.js";
 
 
 async function seed() {

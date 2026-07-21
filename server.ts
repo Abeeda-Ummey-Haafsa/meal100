@@ -7,8 +7,8 @@ dotenv.config();
 import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
-import { connectDB } from "./src/db/connect";
-import { defaultUsers, defaultVendors, defaultPackages } from './src/seedData';
+import { connectDB } from "./src/db/connect.js";
+import { defaultUsers, defaultVendors, defaultPackages } from './src/seedData.js';
 
 import {
   User,
@@ -18,7 +18,7 @@ import {
   Transaction,
   Review,
   Withdrawal,
-} from "./src/types";
+} from "./src/types.js";
 
 import {
   UserModel,
@@ -29,7 +29,7 @@ import {
   ReviewModel,
   WithdrawalModel,
   OtpModel
-} from "./src/db/models";
+} from "./src/db/models.js";
 
 const PORT = 3000;
 
@@ -1129,27 +1129,6 @@ app.post('/api/admin/withdrawals/:id/status', async (req, res) => {
 
 // =================== VITE SERVING & RUNTIME ===================
 
-// async function startServer() {
-//   if (process.env.NODE_ENV !== "production") {
-//     const vite = await createViteServer({
-//       server: { middlewareMode: true },
-//       appType: "spa",
-//     });
-//     app.use(vite.middlewares);
-//   } else {
-//     const distPath = path.join(process.cwd(), 'dist');
-//     app.use(express.static(distPath));
-//     app.get('*', (req, res) => {
-//       res.sendFile(path.join(distPath, 'index.html'));
-//     });
-//   }
-
-//   app.listen(PORT, "0.0.0.0", () => {
-//     console.log(`[Meal100] Full-Stack server running on http://localhost:${PORT}`);
-//   });
-// }
-
-// startServer();
 async function startServer() {
   if (process.env.VERCEL) {
     // On Vercel: no listen(), no Vite middleware, no static serving —
